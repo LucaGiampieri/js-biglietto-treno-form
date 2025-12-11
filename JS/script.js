@@ -20,10 +20,13 @@ const KmUser = document.getElementById("kmUser");
 const priceUser = document.getElementById("priceUser");
 
 
-// dichiariamo il form di riferiemtno 
+//dichiariamo il form di riferiemtno 
 
 const form = document.querySelector(".formContainer")
 
+//dichiaro la la sezione da fa comparire quando si preme invio 
+
+const oputputSection = document.querySelector(".outputContainer")
 
 //AVVIO
 
@@ -53,7 +56,9 @@ form.addEventListener("submit", (event) => {
         finalPrice = (partialPrice).toFixed(2);
     }
     //mettiamo a schermo il prezzo finale
-    priceUser.innerText = finalPrice;
+    priceUser.innerText = finalPrice + " \u20AC";
+    //facciamo comparire la sezione di outpout
+    oputputSection.classList.remove("displayNone")
     // pulisco i campi del form dopo l'invio
     form.reset();
 })
