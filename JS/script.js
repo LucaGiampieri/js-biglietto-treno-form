@@ -36,5 +36,31 @@ form.addEventListener("submit", (event) => {
     ageUser.innerText = ageUserField.value;
     //mettiamo a schermo i km che l'utente vuole percorrere
     KmUser.innerText = KmUserField.value;
-
+    //creo una varibile in cui salvare i km come numero
+    let km = parseInt(KmUserField.value);
+    //faccio il conto parziale del prezzo
+    let partialPrice = km * 0.21;
+    //creo un variabile che andrà a contenere il prezzo finale
+    let finalPrice;
+    //faccio fare i conti se il l'utente è minorenne
+    if (ageUserField.value === "Minorenne") {
+        finalPrice = (partialPrice - (partialPrice / 100 * 20)).toFixed(2)
+        //faccio fare i conti se l'utente è over 65    
+    } else if (ageUserField.value === "Over 65") {
+        finalPrice = (partialPrice - (partialPrice / 100 * 40)).toFixed(2);
+        //faccio fare il conto se l'utente è maggiorenne ma under 65    
+    } else {
+        finalPrice = (partialPrice).toFixed(2);
+    }
+    //mettiamo a schermo il prezzo finale
+    priceUser.innerText = finalPrice;
+    // pulisco i campi del form dopo l'invio
+    form.reset();
 })
+
+
+
+
+
+
+
