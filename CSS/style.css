@@ -1,6 +1,54 @@
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: blue;
+    border-radius: 30px;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    padding: 2rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.subContainerTrain {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }

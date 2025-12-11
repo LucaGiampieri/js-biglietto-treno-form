@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcola Prezzi Biglietto Treno</title>
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="icon" href="./img/icona-della-linea-ferroviaria-illustrazione-del-simbolo-vettore-tren.jpg"">
+    <link rel="icon" href="./img/icona-della-linea-ferroviaria-illustrazione-del-simbolo-vettore-tren.jpg">
 </head>
+
 <body>
-    
+
+    <h1 class="title">Calcolatore Prezzo Biglietto</h1>
+    <section class="container">
+        <form action="#" class="formContainer">
+            <div class="subContainer">
+                <label for="nameUser">Nome e Cognome</label>
+                <input class="userName" placeholder="Inserisci nome e cognome" type="text" id="nameUser" required />
+            </div>
+            <div class="subContainer">
+                <label for="ageUser">Fascia di età</label>
+                <select id="ageUser" class="ageSelect">
+                    <option value="">Scegli la tua fascia di età</option>
+                    <option value="Minorenne">Minorenne</option>
+                    <option value="Adulto">Adulto</option>
+                    <option value="Over 65">Over 65</option>
+                </select>
+            </div>
+            <div class="subContainer">
+                <label for="KmUser">Km da percorrere</label>
+                <input class="userKm" placeholder="Inserisci i Km che vuoi percorrere" type="number" id="KmUser"
+                    required />
+            </div>
+            <div class="subContainer">
+                <div class="subContainerTrain">
+                    <div>
+                        <button id="buttonUser" class="button">Invia</button>
+                    </div>
+                    <img src="./img/schema-di-disegno-della-linea-ferroviaria-ad-alta-velocità-tecnologi.jpg"
+                        alt="TRain Photo">
+                </div>
+            </div>
+        </form>
+
+
+
+    </section>
+
     <script src="./JS/script.js"> </script>
 </body>
+
 </html>
