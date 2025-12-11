@@ -20,3 +20,15 @@ const KmUser = document.getElementById("kmUser");
 const priceUser = document.getElementById("priceUser");
 
 
+// dichiariamo il form di riferiemtno 
+
+const form = document.querySelector(".formContainer")
+
+
+//AVVIO
+
+form.addEventListener("submit", (event) => {
+    //facciamo in modo che il form non agisca da form e resetti la pagina all'invio dei dati 
+    event.preventDefault();
+
+})
