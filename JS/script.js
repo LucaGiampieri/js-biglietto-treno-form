@@ -30,6 +30,7 @@ const oputputSection = document.querySelector(".outputContainer")
 
 //AVVIO
 
+//attiviamo il tasto invia
 form.addEventListener("submit", (event) => {
     //facciamo in modo che il form non agisca da form e resetti la pagina all'invio dei dati 
     event.preventDefault();
@@ -63,8 +64,8 @@ form.addEventListener("submit", (event) => {
     form.reset();
 })
 
-
-
+//attiviamo il tasto annulla
+deletebuttonUser.addEventListener("click", () => oputputSection.classList.add("displayNone"))
 
 
 
