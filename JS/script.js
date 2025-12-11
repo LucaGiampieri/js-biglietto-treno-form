@@ -7,7 +7,7 @@ const ageUserField = document.getElementById("ageUserField");
 
 const KmUserField = document.getElementById("KmUserField");
 
-const buttonUser = document.getElementById("buttonUser");
+const deletebuttonUser = document.getElementById("deleteButton");
 
 //andiamo a dichiarare le varibili di oputput
 

@@ -15,11 +15,11 @@
     <section class="container">
         <form action="#" class="formContainer">
             <div class="subContainer">
-                <label for="nameUserField">Nome e Cognome</label>
+                <label class="inputTitle" for="nameUserField">Nome e Cognome</label>
                 <input class="userName" placeholder="Inserisci nome e cognome" type="text" id="nameUserField" required />
             </div>
             <div class="subContainer">
-                <label for="ageUserField">Fascia di età</label>
+                <label class="inputTitle" for="ageUserField">Fascia di età</label>
                 <select id="ageUserField" class="ageSelect" required>
                     <option value="">Scegli la tua fascia di età</option>
                     <option value="Minorenne">Minorenne</option>
@@ -28,17 +28,14 @@
                 </select>
             </div>
             <div class="subContainer">
-                <label for="KmUserField">Km da percorrere</label>
+                <label class="inputTitle" for="KmUserField">Km da percorrere</label>
                 <input class="userKm" placeholder="Inserisci i Km che vuoi percorrere" type="number" id="KmUserField"
                     required />
             </div>
             <div class="subContainer">
                 <div class="subContainerTrain">
-                    <div>
                         <button id="buttonUser" class="button">Invia</button>
-                    </div>
-                    <img src="./img/schema-di-disegno-della-linea-ferroviaria-ad-alta-velocità-tecnologi.jpg"
-                        alt="TRain Photo">
+                        <a class="button" href="#" id="deleteButton">Annulla</a>
                 </div>
             </div>
         </form>
@@ -46,23 +43,24 @@
          <div class="outputContainer displayNone">
             <div class="outputSubContainer">
                 <h2 class="outputTitle">Nome:</h2>
-                <p class="userNameOutput" id="nameUser"></p>
+                <p class="userOutput" id="nameUser"></p>
             </div>
             <div class="outputSubContainer">
                  <h2 class="outputTitle">Fascia età:</h2>
-                <p class="userAgeOutput" id="ageUser"></p>
+                <p class="userOutput" id="ageUser"></p>
             </div>
             <div class="outputSubContainer">
                  <h2 class="outputTitle">Km da percorrere:</h2>
-                <p class="userKmOutput" id="kmUser"></p>
+                <p class="userOutput" id="kmUser"></p>
             </div>
             <div class="outputSubContainer">
                  <h2 class="outputTitle">Prezzo:</h2>
-                <p class="userPriceOutput" id="priceUser"></p>
+                <p class="userOutput" id="priceUser"></p>
             </div>
 
 
-
+<img src="./img/schema-di-disegno-della-linea-ferroviaria-ad-alta-velocità-tecnologi.jpg"
+                        alt="TRain Photo">
 
     </section>
 

@@ -5,26 +5,42 @@
     box-sizing: border-box;
 }
 
-.title {
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 3rem;
+/* Generics */
+
+body {
+    background-color: aliceblue;
 }
 
 .container {
     width: 60%;
     margin: 0 auto;
     margin-top: 1rem;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: darkblue;
 }
+
+/* Title Section */
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+    border-bottom: 5px solid darkblue;
+    color: darkblue;
+}
+
+/* Form Section */
 
 .formContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: blue;
-    border-radius: 30px;
-
+    background-color: #E1E1E1;
+    border-radius: 20px;
+    border: 2px solid black;
 }
 
 .subContainer {
@@ -32,44 +48,75 @@
     flex-direction: column;
     flex-basis: 40%;
     padding: 2rem;
-    color: white;
-    font-size: 1.5rem;
 }
 
-.button {
+/* Form Title */
+
+.inputTitle{
     font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
+    padding-bottom: 0.5rem;
+    font-weight: 900;
 }
 
-img {
-    max-width: 20%;
-    border-radius: 10px;
-}
+/* Form Button */
 
 .subContainerTrain {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
+
+.button {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+
+#deleteButton{
+    text-decoration: none;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+/* Output Section */
 
 .outputContainer {
     margin-top: 2rem;
-    background-color: blue;
+    background-color: #E1E1E1;
     border-radius: 20px;
-    color: white;
     display: flex;
     justify-content: space-between;
+    border: 2px solid black;
 }
 
-.outputSubContainer{
-    padding: 1rem; 
-}
-
-.displayNone{
+.displayNone {
     display: none;
 }
 
-.outputTitle{
-    padding: 1rem 0rem;
+.outputSubContainer {
+    padding: 1rem;
 }
+
+/* Output User Data */
+
+.outputTitle {
+    padding: 1rem 0rem;
+    font-size: 1.7rem;
+}
+
+.userOutput{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+img {
+    max-width: 20%;
+    border-radius: 20px;
+}
+
+
