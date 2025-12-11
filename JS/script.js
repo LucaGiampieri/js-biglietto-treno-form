@@ -30,5 +30,11 @@ const form = document.querySelector(".formContainer")
 form.addEventListener("submit", (event) => {
     //facciamo in modo che il form non agisca da form e resetti la pagina all'invio dei dati 
     event.preventDefault();
+    //mettiamo a schermo il nome dell'utente
+    nameUser.innerText = nameUserField.value;
+    //mettiamo a schermo la fascia di età dell'utente
+    ageUser.innerText = ageUserField.value;
+    //mettiamo a schermo i km che l'utente vuole percorrere
+    KmUser.innerText = KmUserField.value;
 
 })

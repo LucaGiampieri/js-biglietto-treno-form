@@ -15,8 +15,6 @@
     width: 60%;
     margin: 0 auto;
     margin-top: 1rem;
-    background-color: blue;
-    border-radius: 30px;
 }
 
 .formContainer {
@@ -24,6 +22,8 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+     background-color: blue;
+    border-radius: 30px;
 
 }
 
