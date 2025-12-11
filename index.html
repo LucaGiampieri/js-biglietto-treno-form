@@ -15,12 +15,12 @@
     <section class="container">
         <form action="#" class="formContainer">
             <div class="subContainer">
-                <label for="nameUser">Nome e Cognome</label>
-                <input class="userName" placeholder="Inserisci nome e cognome" type="text" id="nameUser" required />
+                <label for="nameUserField">Nome e Cognome</label>
+                <input class="userName" placeholder="Inserisci nome e cognome" type="text" id="nameUserField" required />
             </div>
             <div class="subContainer">
-                <label for="ageUser">Fascia di età</label>
-                <select id="ageUser" class="ageSelect">
+                <label for="ageUserField">Fascia di età</label>
+                <select id="ageUserField" class="ageSelect">
                     <option value="">Scegli la tua fascia di età</option>
                     <option value="Minorenne">Minorenne</option>
                     <option value="Adulto">Adulto</option>
@@ -28,8 +28,8 @@
                 </select>
             </div>
             <div class="subContainer">
-                <label for="KmUser">Km da percorrere</label>
-                <input class="userKm" placeholder="Inserisci i Km che vuoi percorrere" type="number" id="KmUser"
+                <label for="KmUserField">Km da percorrere</label>
+                <input class="userKm" placeholder="Inserisci i Km che vuoi percorrere" type="number" id="KmUserField"
                     required />
             </div>
             <div class="subContainer">
@@ -42,6 +42,25 @@
                 </div>
             </div>
         </form>
+        <div class="outputContainer">
+            <div class="outputSubContainer">
+                <p class="userNameOutput" id="nameUser"></p>
+            </div>
+            <div class="outputSubContainer">
+                <p class="userAgeOutput" id="ageUser"></p>
+            </div>
+            <div class="outputSubContainer">
+                <p class="userKmOutput" id="kmUser"></p>
+            </div>
+            <div class="outputSubContainer">
+                <p class="userPriceOutput" id="priceUser"></p>
+            </div>
+
+
+
+
+
+        </div>
 
 
 

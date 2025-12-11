@@ -43,7 +43,7 @@
 }
 
 img {
-    max-width: 50%;
+    max-width: 20%;
     border-radius: 10px;
 }
 
@@ -52,3 +52,4 @@ img {
     align-items: center;
     gap: 1rem;
 }
+
