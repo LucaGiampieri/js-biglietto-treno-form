@@ -47,10 +47,10 @@ form.addEventListener("submit", (event) => {
     //creo un variabile che andrà a contenere il prezzo finale
     let finalPrice;
     //faccio fare i conti se il l'utente è minorenne
-    if (ageUserField.value === "Minorenne") {
+    if (ageUserField.value === "Ridotto: minorenne") {
         finalPrice = (partialPrice - (partialPrice / 100 * 20)).toFixed(2)
         //faccio fare i conti se l'utente è over 65    
-    } else if (ageUserField.value === "Over 65") {
+    } else if (ageUserField.value === "Ridotto: over 65") {
         finalPrice = (partialPrice - (partialPrice / 100 * 40)).toFixed(2);
         //faccio fare il conto se l'utente è maggiorenne ma under 65    
     } else {
